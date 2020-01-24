@@ -107,7 +107,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | Jan 27 | Create working Mapbox Prototype                    | Incomplete |
 | Jan 28 | Filter through OpenData calls and create map plots | Incomplete |
 | Jan 29 | Create HeatMap.                                    | Incomplete |
-| Jan 30 | Make Slider functional                             | Incomplete |
+| Jan 30 | Make Slider functional, Reach MVP                              | Incomplete |
 | Jan 31 | Styling                                            | Incomplete |
 
 ## Additional Libraries
