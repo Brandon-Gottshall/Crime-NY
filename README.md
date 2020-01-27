@@ -122,6 +122,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 * React Router
 * Axios
 * MapBox-GL
+* React-Component-Slider
 
 ## Issues and Resolutions
 
