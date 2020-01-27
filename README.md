@@ -90,7 +90,7 @@ Based on the initial logic defined in the previous section, try to breakdown the
 
 | Component                                         | Priority | Estimated Time | Time Invested | Actual Time |
 |---------------------------------------------------|----------|----------------|---------------|-------------|
-| Map                                               | High     | 16 hrs         | 0 hrs         | 0 hrs       |
+| Map                                               | High     | 16 hrs         | 5 hrs         | 0 hrs       |
 | DataHandler - Filter by Year                      | High     | 8 hrs          | 0 hrs         | 0 hrs       |
 | DataHandler - Create HeatMap data                 | High     | 8 hrs          | 0 hrs         | 0 hrs       |
 | DataHandler - Plot Individual Crimes              | High     | 6 hrs          | 0 hrs         | 0 hrs       |
@@ -109,8 +109,9 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 | Day    | Deliverable                                        | Status     |
 |--------|----------------------------------------------------|------------|
-| Jan 24 | Complete proposal                                  | Incomplete |
-| Jan 27 | Create working Mapbox Prototype                    | Incomplete |
+| Jan 24 | Complete proposal                                  | Complete |
+| Jan 27 | Create working Mapbox Prototype                    | Complete |
+| Jan 27 | Create working Mapbox Prototype                    | Complete |
 | Jan 28 | Filter through OpenData calls and create map plots | Incomplete |
 | Jan 29 | Create HeatMap.                                    | Incomplete |
 | Jan 30 | Make Slider functional, Reach MVP                              | Incomplete |

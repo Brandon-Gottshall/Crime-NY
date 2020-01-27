@@ -8,15 +8,11 @@ function App() {
   return (
     <div>
       {/*I want to conditionally render here the introduction screen than into the data container.*/}
-      {proceed ? (
-          <DataHandler/>
-          )
-                  :
-                  (<div>
-                      <p>This is the intro screen</p>
-                       {/*This should be a bit of react router pointed at /intro*/}
-                      <Intro setProceed={setProceed}/>
-                  </div>)
+      {proceed ? (<DataHandler/>) : (<div>
+                                        <p>This is the intro screen</p>
+                                         {/*This should be a bit of react router pointed at /intro*/}
+                                        <Intro setProceed={setProceed}/>
+                                    </div>)
       }
 
     </div>

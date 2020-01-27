@@ -3,14 +3,16 @@ import ReactMapGL, { Marker, Popup } from "react-map-gl"
 
 
 const Map = props => {
-    const [viewport, setViewport] = useState({
+    const { markers } = props
+    const [ viewport, setViewport ] = useState({
         latitude: 40.7089754,
         longitude: -73.8029417,
         zoom: 10,
-        width: '50vw',
-        height: '50vh'
+        width: '100vw',
+        height: '70vh'
     })
-    console.log(process.env.REACT_APP_MAPBOX_TOKEN)
+
+
     return (
         <div style={{backgroundColor: 'gray'}}>
             <p>This is the Map component</p>
@@ -20,8 +22,7 @@ const Map = props => {
                         onViewportChange={viewport => {
                             setViewport(viewport)
                         }}>
-
-                {/*Markers go here*/}
+                {markers}
             </ReactMapGL>
             <p>This component will utilize the Map GL MapBox wrapper Library to display a dynamic map.</p>
         </div>
