@@ -1,4 +1,5 @@
 import React from "react"
+import ReactMapGL, { Map, Popup } from "react-map-gl"
 
 const Map = props => {
     return (
