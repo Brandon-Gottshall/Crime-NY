@@ -1,24 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import Intro from './Components/Intro.js'
+import DataHandler from './Components/DataHandler.js'
 
 function App() {
+  const [ proceed, setProceed ] = useState(null);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/*I want to conditionally render here the introduction screen than into the data container.*/}
+      {proceed ? (<p>This is the area where the rest of the app renders.</p>)
+                  :
+                  (<div>
+                      <p>This is the intro screen</p>
+                       {/*This should be a bit of react router pointed at /intro*/}
+                      <Intro setProceed={setProceed}/>
+                  </div>)
+      }
+
     </div>
   );
 }

@@ -6,7 +6,13 @@
 **Project decription:** This application provides a historical experience to the end-user of the ever changing climate of crime in NYC.
 
 ## API
-This project will utilize the NYC OpenData and Mapbox API's
+This project will utilize the NYC OpenData
+
+OpenData Endpoint
+```
+https://data.cityofnewyork.us/resource/qgea-i56i.json
+```
+
 
 ## API Snippet
 
