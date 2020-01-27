@@ -8,7 +8,9 @@ function App() {
   return (
     <div>
       {/*I want to conditionally render here the introduction screen than into the data container.*/}
-      {proceed ? (<p>This is the area where the rest of the app renders.</p>)
+      {proceed ? (
+          <DataHandler/>
+          )
                   :
                   (<div>
                       <p>This is the intro screen</p>

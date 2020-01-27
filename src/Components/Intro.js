@@ -1,6 +1,6 @@
 import React from "react";
 
-const Intro = (props) => {
+const Intro = props => {
 
     const { setProceed } = props
     // Object deconstruction for parent Component, APP's, method 'setProceed'
