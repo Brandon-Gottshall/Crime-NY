@@ -1,5 +1,7 @@
 import React, {useState} from "react"
 import ReactMapGL, { Marker, Popup } from "react-map-gl"
+import felony from '../Images/Felony.png'
+
 
 
 const Map = props => {
