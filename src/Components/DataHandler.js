@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Map from './Map.js'
 import axios from 'axios'
 import {Marker} from "react-map-gl";
+import SliderComponent from "./SliderComponent"
 import Felony from '../Images/Felony.png'
 import Misdemeanor from '../Images/Misdemeanor.png'
 import Violation from '../Images/Violation.png'
@@ -17,9 +18,7 @@ const DataHandler = props => {
     const apiCall = async () => {
         const response = await axios.get(url)
         setData(response.data)
-        console.log(response.data)
         setComplaints(response.data.map((complaint) => {
-            console.log(complaint)
             const latLong = [ parseFloat(complaint.latitude), parseFloat(complaint.longitude)]
             const customPin = {
                 width: '10px',
@@ -69,9 +68,10 @@ const DataHandler = props => {
                     <div>
                         <p>This is the datahandler component.</p>
                         <Map data={data} markers={complaints}/>
+                        <SliderComponent {...props} />
                     </div>
                 )
-                                    :
+                :
                 (
                     <p>No Data</p>
                 )

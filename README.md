@@ -122,12 +122,19 @@ You are **responsible** for scheduling time with your squad to seek approval for
 * React Router
 * Axios
 * MapBox-GL
-* React-Component-Slider
+* Radium
 
 ## Issues and Resolutions
 
 I anticipate issues using the MapBox API as it has a relatively steep learning, However I am commiting time to tutorials over the weekend.
 
+
+*Map box proved quite simple to use after watching a tutorial.*
+
+	
+I expected my slider component to be very easy to build.
+
+*I'm still currently strugling to build the slider however I think I approached the problem with a solution that was beyond the neccessary application.*
 ## Code Snippet
 
 Use this section to include a brief code snippet you are proud of, along with a brief description of why.
@@ -140,3 +147,23 @@ function reverse(string) {
 
 ## Change Log
  Use this section to document what changes were made in your overall planning and the reasoning behind those changes.  
+ 
+###Jan 30
+* Removing Material-ui and Typeface. I have come to the realization that I want to approach the slider component from a diffrent angle. I realized that the slider can be built using:
+
+```
+<div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+```
+
+I will also be adding in the Radium library to use in my inline library. This library allows the developer to add in ::hover effects as well as all other css capabilities that are not supported by default within react inline styling.
+
+###Jan 29
+* Removed the React-Component-Slider library replacing it with Material-UI
+
+* Added Roboto-typeface library
+ 
+###Jan 28
+-Added New libray React-Component-Slider.
+-Created colorized crimes.
