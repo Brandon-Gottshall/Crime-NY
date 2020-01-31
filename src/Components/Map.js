@@ -16,7 +16,7 @@ const Map = props => {
     return (
         <div style={{backgroundColor: 'gray'}}>
             <ReactMapGL {...viewport}
-                        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+                        mapboxApiAccessToken='pk.eyJ1IjoiYnJhbmRvbmdvdHRzaGFsbCIsImEiOiJjazVzOHFibDUwbGI4M2RtMGdvNjh6ZDNrIn0.m-BczjsRkpG6DvPkGNUngA'
                         mapStyle='mapbox://styles/brandongottshall/ck5sdjd8x1x6u1io03mka7g5l'
                         onViewportChange={viewport => {
                             setViewport(viewport)
