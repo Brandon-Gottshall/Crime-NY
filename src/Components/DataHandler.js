@@ -1,5 +1,9 @@
 import React, {useEffect, useState} from "react";
+import { useParams } from 'react-router-dom'
 import Map from './Map.js'
+import Header from './Header.js'
+import Footer from './Footer.js'
+import Legend from './Legend.js'
 import axios from 'axios'
 import {Marker} from "react-map-gl";
 import SliderComponent from "./SliderComponent"
@@ -9,7 +13,7 @@ import Violation from '../Images/Violation.png'
 
 
 const DataHandler = props => {
-
+    const { year } = useParams()
     const [data, setData] = useState(null)
     const [url, setUrl] = useState('https://data.cityofnewyork.us/resource/qgea-i56i.json')
     const [complaints, setComplaints] = useState([])
@@ -37,17 +41,8 @@ const DataHandler = props => {
             return (
                 (complaint.latitude)
                 ? (<Marker key={complaint.cmplnt_num} latitude={latLong[0]} longitude={latLong[1]}>
-                    <div
-                        style={customPin}
-                        onClick={(complaint) => {
-                            setCurrentComplaint(complaint)
-                            console.log('complaint was saved to state')
-                        }}
-                        >
-                        <img style={{
-                            width: '10px',
-                            height: '10px'
-                        }} src={imageSelector(complaint.law_cat_cd)} alt='pin'/>
+                    <div style={customPin} onClick={() => {setCurrentComplaint(complaint)}}>
+                        <img style={{width: '10px',height: '10px'}} src={imageSelector(complaint.law_cat_cd)} alt='pin'/>
                     </div>
                 </Marker>)
                 : null)
@@ -55,28 +50,22 @@ const DataHandler = props => {
     }
 
     useEffect(() => {
+            setCurrentComplaint(null)
+        setUrl(`https://data.cityofnewyork.us/resource/qgea-i56i.json?$where=cmplnt_fr_dt%20between%20%27${year}-01-01T00:00:00%27%20and%20%27${year}-12-31T23:59:00%27`)
         apiCall()
-    }, [url])
+    }, [year])
 
-    return (<div style={{
-            backgroundColor: 'red'
-        }}>
-        {
-            (
-                data ?
-                (
-                    <div>
-                        <p>This is the datahandler component.</p>
-                        <Map data={data} markers={complaints}/>
-                        <SliderComponent {...props} />
-                    </div>
-                )
-                :
-                (
-                    <p>No Data</p>
-                )
-            )
-        }
-    </div>)
+    return (<div style={{textAlign: 'center', backgroundColor: 'gray', height: '100vh'}}>
+    {(data ?
+        (<div>
+            <Header/>
+            <Map data={data} markers={complaints} currentComplaint={currentComplaint} setCurrentComplaint={setCurrentComplaint}/>
+            <Legend/>
+            <SliderComponent {...props} />
+            <span>Slide to change year.</span>
+            <Footer/>
+        </div>
+        ):(null))
+    }</div>)
 }
 export default DataHandler

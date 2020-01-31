@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 const SliderComponent = props => {
+    const [year, setYear] = useState(2006)
 
     const slideContainerStyle = {
       width: '100%'
     }
-
     const sliderStyle = {
       appearance: 'none',
       width: '100%',
@@ -17,13 +17,7 @@ const SliderComponent = props => {
       ':hover': { opacity: '1' }
     }
 
-
-
-
     return (
-
-
-
         <div style={slideContainerStyle}>
             <input type="range"
                     min="2006"
@@ -33,16 +27,19 @@ const SliderComponent = props => {
                     id="myRange"
                     onMouseUp={(e) => {
                         e.preventDefault()
-                        console.log(e.target.value)
-                        console.log(props)
-                        // props.history.push('/hello')
+                        props.history.push(e.target.value)
+                    }}
+                    onChange={ (e) => {
+                        setYear(e.target.value)
                     }}
                     >
-
             </input>
+            <h3 style={{
+                    textAlign: 'center',
+                    width: '100vw'
+                }}>{year}</h3>
         </div>
     )
-
 }
 
 export default SliderComponent

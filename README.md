@@ -53,8 +53,8 @@ vic_sex: "F",
 ### MVP
 
 - Manipulate data set by year using slider
-- Display heatmap to help end-user visualize the hot spots for crime.
-- Plot crime incidences with clickable dialog leading to more information.
+- Display mapped points to help end-user visualize the hot spots for crime.
+- Plot crime incidences with clickable dialog leading to more information
 
 ### Post-MVP
 
