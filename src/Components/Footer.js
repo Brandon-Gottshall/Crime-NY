@@ -15,7 +15,7 @@ const Footer = () => {
     return(
         <div style={{
             backgroundColor: 'black',
-            position: 'absolute',
+            position: 'fixed',
             bottom: '0',
             width: '100vw',
             height: '8vh',
@@ -26,7 +26,6 @@ const Footer = () => {
             <a href='https://www.codewars.com/users/koden11'><img src={cw} style={iconStyle} alt='CodeWars'/></a>
 
             <a href='https://github.com/Brandon-Gottshall'><img src={git} style={iconStyle} alt='GitHub'/></a>
-        <p style={{color: 'white', margin: 'auto'}}>Brandon Gottshall© 2019</p>
         <a style={{
             width: '20vw',
             height: '8vh',

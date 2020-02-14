@@ -35,7 +35,7 @@ const Map = props => {
                     <p>Description: {currentComplaint.ofns_desc}</p>
                     </Popup>
                 ): null}
-                }
+                
 
             </ReactMapGL>
         </div>

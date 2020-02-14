@@ -1,5 +1,5 @@
-import React from "react";
-
+import React from "react"
+import prison from '../Images/prison.jpg'
 const Intro = props => {
 
     const { setProceed } = props
@@ -9,23 +9,26 @@ const Intro = props => {
         <div style={{
                 width: '100vw',
                 height: '100vh',
-                backgroundColor: 'black',
+                background: `url(${prison})`,
+                backgroundPosition: '0% 40%',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 textAlign: 'center'
             }}>
-            <h1 style={{color: 'white', marginBottom: '10vh' }}>CrimeNY</h1>
-            <h2 style={{color: 'white', marginBottom: '-3vh'}}>Welcome</h2>
+            <h1 style={{color: 'white', marginBottom: '10vh', textShadow: '0 0 20px black' }}>CrimeNY</h1>
             <p style={{
-                    marginTop: '10vh',
-                    color: 'white',
-                    fontSize: '3vh'
+                    color: 'black',
+                    fontSize: '3vh',
+                    fontWeight: '600',
+                    textShadow: '0 0 4px white'
                 }}>This experiment is a visualization of the ever changing
             fingerprint of NYC crime.</p>
             <p style={{
-                    color: 'white',
-                    fontSize: '3vh'
+                    color: 'black',
+                    fontSize: '3vh',
+                    fontWeight: '600',
+                    textShadow: '0 0 4px white'
                 }}>This information is sourced from NYC OpenData</p>
 
             <button

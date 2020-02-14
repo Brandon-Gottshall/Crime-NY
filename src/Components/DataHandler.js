@@ -41,7 +41,10 @@ const DataHandler = props => {
             return (
                 (complaint.latitude)
                 ? (<Marker key={complaint.cmplnt_num} latitude={latLong[0]} longitude={latLong[1]}>
-                    <div style={customPin} onClick={() => {setCurrentComplaint(complaint)}}>
+                    <div style={customPin}
+                        onClick={() => {setCurrentComplaint(complaint)}}
+                        onTouch={() => {setCurrentComplaint(complaint)}}
+                        >
                         <img style={{width: '10px',height: '10px'}} src={imageSelector(complaint.law_cat_cd)} alt='pin'/>
                     </div>
                 </Marker>)

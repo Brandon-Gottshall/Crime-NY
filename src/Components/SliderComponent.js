@@ -4,7 +4,8 @@ const SliderComponent = props => {
     const [year, setYear] = useState(2006)
 
     const slideContainerStyle = {
-      width: '100%'
+      width: '100%',
+      height: '8vh'
     }
     const sliderStyle = {
       appearance: 'none',
@@ -29,6 +30,10 @@ const SliderComponent = props => {
                         e.preventDefault()
                         props.history.push(e.target.value)
                     }}
+                    onTouchEnd={(e) => {
+                        e.preventDefault()
+                        props.history.push(e.target.value)
+                    }}
                     onChange={ (e) => {
                         setYear(e.target.value)
                     }}
@@ -36,7 +41,8 @@ const SliderComponent = props => {
             </input>
             <h3 style={{
                     textAlign: 'center',
-                    width: '100vw'
+                    width: '100vw',
+                    marginBottom: '1vh'
                 }}>{year}</h3>
         </div>
     )
