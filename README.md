@@ -1,4 +1,28 @@
-# Project Overview
+# Crime-NY
+
+Historical NYC crime exploration app with a time-based narrative view.
+
+This repo is kept public as a portfolio case study. The original project was built around NYC OpenData, Mapbox, and a year-based exploration flow; the current value is the data-product concept and the visible path from early planning to a working interactive app.
+
+## What It Shows
+
+- Data-product thinking around a public civic dataset.
+- Early experience designing map-based exploration and timeline controls.
+- A concrete candidate for a future v2 with stronger filtering, performance, and explanatory storytelling.
+
+## Chronology
+
+- Original version: bootcamp-era data visualization project.
+- Restoration pass: dependency cleanup and build verification so the project remains reviewable.
+- Future v2: rebuild the crime narrative as a clearer, faster, better-explained exploration tool.
+
+## Maintenance Status
+
+Historical project, currently being restored. The codebase has received dependency cleanup, but the larger product opportunity is a modernized v2 rather than polishing the original implementation indefinitely.
+
+---
+
+# Original Project Overview
 
 
 ## CrimeNY
