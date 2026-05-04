@@ -1,29 +1,42 @@
 # Crime-NY
 
-Historical NYC crime exploration app with a time-based narrative view.
+Historical software-engineering bootcamp project that maps NYC OpenData crime
+complaints through a year-based exploration flow.
 
-This repo is kept public as a portfolio case study. The original project was built around NYC OpenData, Mapbox, and a year-based exploration flow; the current value is the data-product concept and the visible path from early planning to a working interactive app.
+This repo is kept public as portfolio archaeology, not as a data-science claim.
+The original value is in the software product shape: React routing, API
+integration, Mapbox rendering, custom markers, complaint popups, and a timeline
+control for moving through the dataset by year.
 
 ## What It Shows
 
-- Data-product thinking around a public civic dataset.
-- Early experience designing map-based exploration and timeline controls.
-- A concrete candidate for a future v2 with stronger filtering, performance, and explanatory storytelling.
+- Early software-engineering work with React, `react-router`, Axios, and Mapbox.
+- A product-interface idea for turning a public dataset into an explorable map.
+- Planning artifacts from the bootcamp process: MVP scope, component hierarchy,
+  priority matrix, and post-MVP ideas.
+- A reasonable future v2 candidate adjacent to civic-data visualization, but not
+  a completed statistical analysis or conclusions about NYC crime trends.
 
 ## Chronology
 
-- Original version: bootcamp-era data visualization project.
-- Restoration pass: dependency cleanup and build verification so the project remains reviewable.
-- Future v2: rebuild the crime narrative as a clearer, faster, better-explained exploration tool.
+- Original version: SE bootcamp project using NYC OpenData and Mapbox.
+- Restoration pass: dependency cleanup and README framing so the project remains
+  reviewable as a historical artifact.
+- Future v2: rebuild the map/timeline interaction with clearer explanation,
+  stronger filtering, better performance, and explicit caveats around
+  interpreting complaint data.
 
 ## Maintenance Status
 
-Historical project, currently being restored. The codebase has received dependency cleanup, but the larger product opportunity is a modernized v2 rather than polishing the original implementation indefinitely.
+Historical project, currently being restored. The original implementation should
+remain legible, but the higher-value work would be a modern v2 rather than
+polishing this version indefinitely.
 
 ---
 
 # Original Project Overview
 
+The notes below are preserved as the original bootcamp-era project outline.
 
 ## CrimeNY
 
