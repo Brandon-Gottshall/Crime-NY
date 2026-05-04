@@ -1,36 +1,42 @@
 # Crime-NY
 
-Historical software-engineering bootcamp project that maps NYC OpenData crime
+First-year software-engineering bootcamp project that maps NYC OpenData crime
 complaints through a year-based exploration flow.
 
-This repo is kept public as portfolio archaeology, not as a data-science claim.
-The original value is in the software product shape: React routing, API
-integration, Mapbox rendering, custom markers, complaint popups, and a timeline
-control for moving through the dataset by year.
+This repo is kept public as portfolio archaeology, not as pedestal work and not
+as a data-science claim. The original value is in the software product shape:
+React routing, API integration, Mapbox rendering, custom markers, complaint
+popups, and a timeline control for moving through the dataset by year.
+
+It is here because it quietly influenced later career direction: interactive
+explanations, public-data-adjacent interfaces, and rebuilding early product
+ideas with clearer intent.
 
 ## What It Shows
 
-- Early software-engineering work with React, `react-router`, Axios, and Mapbox.
+- First-year software-engineering work with React, `react-router`, Axios, and
+  Mapbox.
 - A product-interface idea for turning a public dataset into an explorable map.
 - Planning artifacts from the bootcamp process: MVP scope, component hierarchy,
   priority matrix, and post-MVP ideas.
-- A reasonable future v2 candidate adjacent to civic-data visualization, but not
-  a completed statistical analysis or conclusions about NYC crime trends.
+- A subtle through-line into later work, but not a completed statistical
+  analysis or conclusions about NYC crime trends.
 
 ## Chronology
 
-- Original version: SE bootcamp project using NYC OpenData and Mapbox.
+- Original version: first-year SE bootcamp project using NYC OpenData and
+  Mapbox.
 - Restoration pass: dependency cleanup and README framing so the project remains
   reviewable as a historical artifact.
-- Future v2: rebuild the map/timeline interaction with clearer explanation,
+- Possible v2: rebuild the map/timeline interaction with clearer explanation,
   stronger filtering, better performance, and explicit caveats around
   interpreting complaint data.
 
 ## Maintenance Status
 
 Historical project, currently being restored. The original implementation should
-remain legible, but the higher-value work would be a modern v2 rather than
-polishing this version indefinitely.
+remain legible and contextualized, but the higher-value work would be a modern
+v2 rather than polishing this version into something it was not.
 
 ---
 
